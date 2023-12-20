@@ -9996,6 +9996,11 @@ a.text-dark:focus {
     color: #007bff !important;
 }
 
+.bg-blue:hover{
+    background-color: #007bff !important; 
+    border: none;
+    color: #fff;
+}
 .white {
     background: #ffffff;
 }

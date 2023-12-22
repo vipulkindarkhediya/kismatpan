@@ -174,7 +174,7 @@ a {
 
 a:hover {
     color: #ba6a62;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:not([href]):not([class]) {
@@ -3242,16 +3242,6 @@ input[type="button"].btn-block {
     white-space: nowrap;
 }
 
-.dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent;
-}
 
 .dropdown-toggle:empty::after {
     margin-left: 0;
@@ -9996,8 +9986,8 @@ a.text-dark:focus {
     color: #007bff !important;
 }
 
-.bg-blue:hover{
-    background-color: #007bff !important; 
+.bg-blue:hover {
+    background-color: #007bff !important;
     border: none;
     color: #fff;
 }
@@ -10021,4 +10011,22 @@ a.text-dark:focus {
     color: #fff !important;
     background-color: #000000 !important;
     border-color: #1c1c1c !important;
+}
+
+#hov:hover > div {
+    border: none !important;
+}
+
+.span-2{
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#menu:hover{
+    color: blue;
 }

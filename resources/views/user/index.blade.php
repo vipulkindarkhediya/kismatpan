@@ -36,35 +36,61 @@
     </div>
     <!-- Featured End -->
 
+    @for ($d = 1; $d <= 5; $d++)
 
-    <!-- Offer Start -->
-    <div class="container-fluid offer">
-        <div class="white pt-5">
-            <div class="row px-xl-5">
-                <div class="col-md-6 pb-4 ">
-                    <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
-                        <img src="{{ asset('user/img/offer-1.png') }}" alt="">
-                        <div class="position-relative" style="z-index: 1;">
-                            <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
-                            <h1 class="mb-4 font-weight-semi-bold">Spring Collection</h1>
-                            <a href="" class="btn btn-outline-dark  rounded py-md-2 px-md-3 bg-blue">Shop Now</a>
+        <!-- Offer Start -->
+        <div class="container-fluid offer mb-3">
+            <div class="white pt-5 rounded">
+                <div class="row px-xl-5">
+                    <div class="col-md-6 pb-4 ">
+                        <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                            <img src="{{ asset('user/img/offer-1.png') }}" alt="">
+                            <div class="position-relative" style="z-index: 1;">
+                                <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
+                                <h1 class="mb-4 font-weight-semi-bold">SFpring Collection</h1>
+                                <a href="" class="btn btn-outline-dark  rounded py-md-2 px-md-3 bg-blue">Shop Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 pb-4 ">
-                    <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
-                        <img src="{{ asset('user/img/offer-2.png') }}" alt="">
-                        <div class="position-relative" style="z-index: 1;">
-                            <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
-                            <h1 class="mb-4 font-weight-semi-bold">Winter Collection</h1>
-                            <a href="" class="btn btn-outline-dark bg-blue rounded py-md-2 px-md-3">Shop Now</a>
+                    <div class="col-md-6 pb-4 ">
+                        <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                            <img src="{{ asset('user/img/offer-2.png') }}" alt="">
+                            <div class="position-relative" style="z-index: 1;">
+                                <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
+                                <h1 class="mb-4 font-weight-semi-bold">Winter Collection</h1>
+                                <a href="" class="btn btn-outline-dark bg-blue rounded py-md-2 px-md-3">Shop Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Offer End -->
+        <!-- Offer End -->
+
+        <!-- Vendor Start -->
+        <div class="container-fluid mb-3">
+            <div class="rounded white py-5">
+                <div class="row px-xl-5">
+                    <div class="col">
+                        <div class="owl-carousel vendor-carousel">
+                            @for ($i = 1; $i <= 8; $i++)
+                                <a href="" id="hov">
+                                    <div class="vendor-item rounded border border-dark p-4">
+                                        <img src="{{ asset('user/img/vendor-' . $i . '.jpg') }}" alt="">
+                                        <div class="d-flex flex-column text-center text-dark">
+                                            <span>Monitar</span>
+                                            <span class="span-2">From $990</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            @endfor
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor End -->
 
 
+    @endfor
 @endsection

@@ -14,11 +14,18 @@
                 </div>
             </form>
         </div>
-        <div class="col-lg-3 col-6 d-flex justify-content-between">
-            <a href="#">login</a>
-            <a href="#">register</a>
-            <a href="" class="btn" title="Cart">
-                <i class="fas fa-shopping-cart text-dark"></i>
+        <div
+            class="col-lg-3 col-6 d-flex justify-content-between align-items-center menu-btn text-capitalize font-weight-medium">
+            <a href="javascript:void(0)" id="loginBtn" class="p-2 rounded">
+                <i class="fa-regular fa-circle-user mr-1"></i>
+                <span>login</span>
+            </a>
+            <a href="javascript:void(0)" id="registerBtn" class="p-2 rounded">
+                <i class="fa-solid fa-user-plus mr-1"></i>
+                <span>register</span>
+            </a>
+            <a href="" title="Cart" class="btn radios text-dark">
+                <i class="fas fa-shopping-cart"></i>
                 <span class="badge">0</span>
             </a>
         </div>
@@ -38,7 +45,7 @@
                                 <img src="{{ asset('user/img/carousel-1.jpg') }}" class="rounded"
                                     style="width: 64px; height:64px;" alt="">
                                 <div class="d-flex position-relative align-items-center">
-                                    <span>gcosery</span>
+                                    <span class="mt-2">mobile</span>
                                 </div>
                             </div>
                         </a>
@@ -88,3 +95,27 @@
         </a>
     </div>
 </div>
+
+@section('jquery')
+    <script>
+        var modalTitle = $("#ajaxModelTitle");
+        var loginUser = $("#loginUser");
+        var ajaxModel = $("#ajaxModel");
+        var sendForm = $("#sendForm");
+
+        $(document).on("click", "#loginBtn", function() {
+            modalTitle.html("User Login");
+            loginUser.val("Login");
+            ajaxModel.modal('show');
+            sendForm.trigger("reset");
+
+        });
+
+        $(document).on("click", "#registerBtn", function() {
+            modalTitle.html("User Register");
+            loginUser.val("Register");
+            ajaxModel.modal('show');
+            sendForm.trigger("reset");
+        });
+    </script>
+@endsection

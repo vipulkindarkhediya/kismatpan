@@ -167,13 +167,13 @@ sup {
 }
 
 a {
-    color: #d19c97;
+    color: #000;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-    color: #ba6a62;
+    color: blue;
     text-decoration: none;
 }
 
@@ -3241,7 +3241,6 @@ input[type="button"].btn-block {
 .dropdown-toggle {
     white-space: nowrap;
 }
-
 
 .dropdown-toggle:empty::after {
     margin-left: 0;
@@ -10017,16 +10016,32 @@ a.text-dark:focus {
     border: none !important;
 }
 
-.span-2{
+.span-2 {
     font-weight: 700;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
-
 }
 
-#menu:hover{
+#menu:hover {
     color: blue;
+}
+
+.menu-btn a:hover {
+    background: #007bff;
+    color: #fff !important;
+}
+
+.radios {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.font-family {
+    font-family: Arial, sans-serif;
 }

@@ -6485,7 +6485,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-    background-color: #edf1ff !important;
+    background-color: #c8d5ff !important;
 }
 
 a.bg-secondary:hover,
@@ -10044,4 +10044,67 @@ a.text-dark:focus {
 
 .font-family {
     font-family: Arial, sans-serif;
+}
+
+.submitUser {
+    color: #000 !important;
+    background-color: #c3c7d7 !important;
+    border: none !important;
+}
+
+.submitUser:hover {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+#loginAfterBtn .down {
+    font-size: 14px;
+    margin-left: 4px;
+    color: #000 !important;
+}
+
+#loginAfterBtn:hover{
+    
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sendMessageButton{
+    color: #000 !important;
+    border: 1px solid #000;
+    
+}
+
+.sendMessageButton:hover{
+    color: #fff !important;
+    background: #007bff !important;
+    border: none;
+}
+
+input:placeholder-shown{
+    text-transform: capitalize;
+}
+
+textarea:placeholder-shown{
+    text-transform: capitalize;
 }

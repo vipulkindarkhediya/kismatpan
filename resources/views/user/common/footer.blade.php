@@ -1,5 +1,5 @@
 <!-- Footer Start -->
-<div class="container-fluid bg-secondary text-dark">
+<div class="container-fluid white text-dark">
     <div class="row px-xl-5 pt-5">
         <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
             <a href="" class="text-decoration-none">
@@ -17,10 +17,10 @@
                 <div class="col-md-4 mb-5">
                     <h5 class="font-weight-bold text-dark mb-4 text-uppercase">about</h5>
                     <div class="d-flex flex-column justify-content-start text-capitalize">
-                        <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                        <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>contact us</a>
+                        <a class="text-dark mb-2" href="{{ route('contact') }}"><i
+                                class="fa fa-angle-right mr-2"></i>contact us</a>
                         <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>about us</a>
-                        
+
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -37,7 +37,7 @@
                         <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>instagram</a>
                         <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>twitter</a>
                         <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>youtube</a>
-                            
+
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>@yield('title')</title>
     <!-- Favicon -->
     {{-- <link href="{{ asset('user/img/favicon') }}" rel="icon"> --}}
@@ -29,29 +30,6 @@
 
 <body style="background: #e4e4e4">
 
-    <!-- Start Boostrap popup model -->
-    <div class="modal fade" id="ajaxModel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ajaxModelTitle"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="sendForm">
-                        <input type="text">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <input type="submit" class="btn btn-primary" id="loginUser"></input>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- End Boostrap popup model --}}
 
     @include('user.common.header')
     @yield('content')
